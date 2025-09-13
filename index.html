@@ -6,55 +6,94 @@
   <title>Form Pendaftaran</title>
 </head>
 <body>
-  <h2>Form Pendaftaran</h2>
-  <form action="backend.php" method="POST">
-    
-    <!-- Username -->
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
-
-    <!-- Email -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <!-- Perguruan Tinggi -->
-    <label for="univ">Perguruan Tinggi:</label>
-    <input type="text" id="univ" name="univ" required><br><br>
-
-    <!-- Program Studi (Radio) -->
-    <p>Program Studi:</p>
-    <input type="radio" id="informatika" name="prodi" value="Informatika" required>
-    <label for="informatika">Informatika</label><br>
-    <input type="radio" id="matematika" name="prodi" value="Matematika">
-    <label for="matematika">Matematika</label><br>
-    <input type="radio" id="fisika" name="prodi" value="Fisika">
-    <label for="fisika">Fisika</label><br>
-    <input type="radio" id="kimia" name="prodi" value="Kimia">
-    <label for="kimia">Kimia</label><br>
-    <input type="radio" id="statistika" name="prodi" value="Statistika">
-    <label for="statistika">Statistika</label><br>
-    <input type="radio" id="biologi" name="prodi" value="Biologi">
-    <label for="biologi">Biologi</label><br><br>
-
-    <!-- Hobi (Checkbox) -->
-    <p>Hobi:</p>
-    <input type="checkbox" id="futsal" name="hobi[]" value="Futsal">
-    <label for="futsal">Futsal</label><br>
-    <input type="checkbox" id="badminton" name="hobi[]" value="Badminton">
-    <label for="badminton">Badminton</label><br>
-    <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
-    <label for="membaca">Membaca</label><br>
-    <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
-    <label for="menulis">Menulis</label><br>
-    <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
-    <label for="traveling">Traveling</label><br><br>
-
-    <!-- Password -->
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
-
-    <!-- Submit -->
-    <button type="submit">Submit</button>
+    <form action="server.php" method="POST">
+    <h2>Form Pendaftaran</h2>
+    <table>
+        <tr>
+            <td>
+                <!-- Username -->
+                <label for="username">Username:</label>
+            </td>
+            <td>
+                <input type="text" id="username" name="username" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Email -->
+                <br><label for="email">Email:</label>
+            </td>
+            <td>
+                <br><input type="email" id="email" name="email" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Perguruan Tinggi -->
+                <br><label for="univ">Perguruan Tinggi:</label>
+            </td>
+            <td>
+                <br><input type="text" id="univ" name="univ" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Program Studi (Radio) -->
+                <p>Program Studi:</p>
+            </td>
+            <td>
+                <br><input type="radio" id="informatika" name="prodi" value="Informatika" required>
+                <label for="informatika">Informatika</label><br>
+                <input type="radio" id="matematika" name="prodi" value="Matematika">
+                <label for="matematika">Matematika</label><br>
+                <input type="radio" id="fisika" name="prodi" value="Fisika">
+                <label for="fisika">Fisika</label><br>
+                <input type="radio" id="kimia" name="prodi" value="Kimia">
+                <label for="kimia">Kimia</label><br>
+                <input type="radio" id="statistika" name="prodi" value="Statistika">
+                <label for="statistika">Statistika</label><br>
+                <input type="radio" id="biologi" name="prodi" value="Biologi">
+                <label for="biologi">Biologi</label>
+                <br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Hobi (Checkbox) -->
+                <p>Hobi:</p>
+            </td>
+            <td>
+                <input type="checkbox" id="futsal" name="hobi[]" value="Futsal">
+                <label for="futsal">Futsal</label><br>
+                <input type="checkbox" id="badminton" name="hobi[]" value="Badminton">
+                <label for="badminton">Badminton</label><br>
+                <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                <label for="membaca">Membaca</label><br>
+                <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+                <label for="menulis">Menulis</label><br>
+                <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+                <label for="traveling">Traveling</label><br><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Password -->
+                <label for="password">Password:</label>
+            </td>
+            <td>
+                <input type="password" id="password" name="password" required><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td>
+                <!-- Submit -->
+                <br><button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
   </form>
 </body>
 </html>
