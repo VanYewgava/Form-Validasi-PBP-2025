@@ -2,10 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Display</title>
+    <title>Student Sign On Form</title>
+    <style>
+        .form-container {
+            max-width: 600px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        .form-column {
+            flex: 1;
+            padding: 10px;
+        }
+        .form-row {
+            margin-bottom: 15px;
+        }
+        .submit-button {
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-    
+    <h2>Student Sign On Form</h2>
+    <div class="form-container">
+        <div class="form-column">
+            <div class="form-row"><label>Username:</label></div>
+            <div class="form-row"><label>Email:</label></div>
+            <div class="form-row"><label>Perguruan Tinggi:</label></div>
+            <div class="form-row"><label>Program Studi:</label></div>
+            <div class="form-row"><label>Hobi:</label></div>
+            <div class="form-row"><label>Password:</label></div>
+            <div class="form-row submit-button"><label>Submit Button:</label></div>
+        </div>
+
+        <div class="form-column">
+            <div class="form-row"><div class="placeholder-box">[username input]</div></div>
+            <div class="form-row"><div class="placeholder-box">[email input]</div></div>
+            <div class="form-row"><div class="placeholder-box">[university input]</div></div>
+            <div class="form-row"><div class="placeholder-box">[program studi radio buttons]</div></div>
+            <div class="form-row"><div class="placeholder-box">[hobbies checkboxes]</div></div>
+            <div class="form-row"><div class="placeholder-box">[password input]</div></div>
+            <div class="form-row submit-button"><div class="placeholder-box">[submit button]</div></div>
+        </div>
+    </div>
 </body>
 </html>
