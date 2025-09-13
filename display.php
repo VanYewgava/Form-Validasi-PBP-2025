@@ -3,7 +3,7 @@
 <!-- Ananda Putra Bayu 24060122140125 -->
 <!-- Achmad Ivan Yugava 24060122140153 -->
 <!-- Khairindra Eka Putra 24060122140178 -->
- 
+
 <?php
 session_start();
 if (!isset($_SESSION["username"])) {
@@ -19,56 +19,77 @@ if (!isset($_SESSION["username"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Sign On Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <h2>Student Sign On Form Detail</h2>
-    <table>
+    <table class="detail-tabel">
         <tr>
+            <!-- Username -->
             <td>
-                <label>Username:</label>
+                <label>Username</label>
+            </td>
+            <td>
+                :
             </td>
             <td>
                 <?php echo htmlspecialchars($_SESSION["username"]); ?>
             </td>
         </tr>
         <tr>
+            <!-- Email -->
             <td>
-                <label>Email:</label>
+                <label>Email</label>
+            </td>
+            <td>
+                :
             </td>
             <td>
                 <?php echo htmlspecialchars($_SESSION["email"]); ?>
             </td>
         </tr>
         <tr>
+            <!-- Universitas -->
             <td>
-                <label>University:</label>
+                <label>University</label>
+            </td>
+            <td>
+                :
             </td>
             <td>
                 <?php echo htmlspecialchars($_SESSION["univ"]); ?>
             </td>
         </tr>
         <tr>
+            <!-- Prodi -->
             <td>
-                <label>Program Studi:</label>
+                <label>Program Studi</label>
+            </td>
+            <td>
+                :
             </td>
             <td>
                 <?php echo htmlspecialchars($_SESSION["prodi"]);  ?>
             </td>
         </tr>
         <tr>
+            <!-- Hobi -->
             <td>
-                <label>Hobbies:</label>
+                <label>Hobbies</label>
+            </td>
+            <td>
+                :
             </td>
             <td>
                 <?php echo implode(", ", $_SESSION["hobi"]); ?>
             </td>
         </tr>
-        <tr>
-            <td></td>
-            <td>
-                <a href="index.html"><button type="submit">Isi ulang form</button></a>
-            </td>
-        </tr>
+        
     </table>
+    <div class="btn-container">
+    <a href="index.html"><button type="submit" class="reset">Isi ulang form</button></a>
+    </div>
+</div>
 </body>
 </html>

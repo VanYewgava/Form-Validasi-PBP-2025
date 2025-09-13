@@ -10,98 +10,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Sign On Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="server.php" method="POST">
-    <h2>Student Sign On Form</h2>
-    <table>
-        <tr>
-            <td>
-                <!-- Username -->
-                <label for="username">Username:</label>
-            </td>
-            <td>
-                <input type="text" id="username" name="username" required><br>
-                <label>Note: Username cannot contain numbers</label>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Email -->
-                <label for="email">Email:</label>
-            </td>
-            <td>
-                <br><input type="email" id="email" name="email" required><br>
-                <label>Note: Email contain @ followed by domain</label>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Perguruan Tinggi -->
-                <br><label for="univ">Perguruan Tinggi:</label>
-            </td>
-            <td>
-                <br><input type="text" id="univ" name="univ" required><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Program Studi (Radio) -->
-                <p>Program Studi:</p>
-            </td>
-            <td>
-                <br><input type="radio" id="informatika" name="prodi" value="Informatika" required>
-                <label for="informatika">Informatika</label><br>
-                <input type="radio" id="matematika" name="prodi" value="Matematika">
-                <label for="matematika">Matematika</label><br>
-                <input type="radio" id="fisika" name="prodi" value="Fisika">
-                <label for="fisika">Fisika</label><br>
-                <input type="radio" id="kimia" name="prodi" value="Kimia">
-                <label for="kimia">Kimia</label><br>
-                <input type="radio" id="statistika" name="prodi" value="Statistika">
-                <label for="statistika">Statistika</label><br>
-                <input type="radio" id="biologi" name="prodi" value="Biologi">
-                <label for="biologi">Biologi</label>
-                <br><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Hobi (Checkbox) -->
-                <p>Hobi:</p>
-            </td>
-            <td>
-                <input type="checkbox" id="futsal" name="hobi[]" value="Futsal">
-                <label for="futsal">Futsal</label><br>
-                <input type="checkbox" id="badminton" name="hobi[]" value="Badminton">
-                <label for="badminton">Badminton</label><br>
-                <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
-                <label for="membaca">Membaca</label><br>
-                <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
-                <label for="menulis">Menulis</label><br>
-                <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
-                <label for="traveling">Traveling</label><br><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <!-- Password -->
-                <label for="password">Password:</label>
-            </td>
-            <td>
-                <input type="password" id="password" name="password" required><br>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                
-            </td>
-            <td>
-                <!-- Submit -->
-                <br><button type="submit">Submit</button>
-            </td>
-        </tr>
-    </table>
-  </form>
+    <div class="container">
+        <form action="server.php" method="POST">
+        <h2>Student Sign On Form</h2>
+        <table class="tabel">
+            <tr>
+                <td>
+                    <!-- Username -->
+                    <label for="username" class="form-label">Username:</label>
+                </td>
+                <td>
+                    <input class="form-input" type="text" id="username" name="username" required><br>
+                    <label class="form-note">Note: Usernames cannot contain number</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Email -->
+                    <label for="email" class="form-label">Email:</label>
+                </td>
+                <td>
+                    <input class="form-input" type="email" id="email" name="email" required><br>
+                    <label class="form-note">Note: Email contain @ followed by domain</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Perguruan Tinggi -->
+                    <br><label for="univ" class="form-label">Perguruan Tinggi:</label>
+                </td>
+                <td>
+                    <br><input class="form-input" type="text" id="univ" name="univ" required><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Program Studi (Radio) -->
+                    <p class="form-label">Program Studi:</p>
+                </td>
+                <td>
+                    <br><input type="radio" id="informatika" name="prodi" value="Informatika" required>
+                    <label for="informatika">Informatika</label><br>
+                    <input type="radio" id="matematika" name="prodi" value="Matematika">
+                    <label for="matematika">Matematika</label><br>
+                    <input type="radio" id="fisika" name="prodi" value="Fisika">
+                    <label for="fisika">Fisika</label><br>
+                    <input type="radio" id="kimia" name="prodi" value="Kimia">
+                    <label for="kimia">Kimia</label><br>
+                    <input type="radio" id="statistika" name="prodi" value="Statistika">
+                    <label for="statistika">Statistika</label><br>
+                    <input type="radio" id="biologi" name="prodi" value="Biologi">
+                    <label for="biologi">Biologi</label>
+                    <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Hobi (Checkbox) -->
+                    <p class="form-label">Hobi:</p>
+                </td>
+                <td>
+                    <input type="checkbox" id="futsal" name="hobi[]" value="Futsal">
+                    <label for="futsal">Futsal</label><br>
+                    <input type="checkbox" id="badminton" name="hobi[]" value="Badminton">
+                    <label for="badminton">Badminton</label><br>
+                    <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                    <label for="membaca">Membaca</label><br>
+                    <input type="checkbox" id="menulis" name="hobi[]" value="Menulis">
+                    <label for="menulis">Menulis</label><br>
+                    <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+                    <label for="traveling">Traveling</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Password -->
+                    <label for="password" class="form-label">Password:</label>
+                </td>
+                <td>
+                    <input class="form-input" type="password" id="password" name="password" required><br>
+                    <label class="form-note">Hint: Password must be at least 8 characters, include an uppercase letter, a lowercase letter, and a number.</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    <!-- Submit -->
+                    <br><button type="submit" class="tombol">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+  </div>
 </body>
 </html>

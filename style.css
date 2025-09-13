@@ -1,0 +1,136 @@
+/*  KELOMPOK 10 PBP 2025
+ Fachryzaidan Akmal 24060122120001
+ Ananda Putra Bayu 24060122140125
+ Achmad Ivan Yugava 24060122140153
+ Khairindra Eka Putra 24060122140178 
+*/
+
+/*style default*/
+body {
+    font-family: sans-serif; 
+    background-color: #f0f0f0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* style untuk wadah utama  */
+.container {
+    width: 500px;
+    margin: 0 auto; 
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* style untuk Judul form */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* style untuk tabel*/
+.tabel {
+    width: 100%;
+    border-collapse: collapse; 
+}
+    
+/* Style untuk masing2 kolom tabel */
+.tabel td {
+    padding: 8px 0; 
+    vertical-align: top;
+}
+    
+/* style untuk kolom pertama */
+.tabel td:first-child {
+    padding-right: 15px; 
+}
+
+/* style untuk label form (username, dll)*/
+.form-label {
+    font-weight: bold; 
+    color: #333; 
+    display: inline-block; 
+    padding-top: 8px; 
+}
+
+/* style untuk input di form */
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    
+/* style untuk note di form */
+.form-note {
+    font-size: 12px;
+    color: #666;
+}
+    
+/* style untuk Tombol submit */
+.tombol {
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* style saat cursor ada di tombol submit */
+.tombol:hover {
+    background-color: #218838;
+}
+
+/* Styling untuk tabel detail */
+.detail-tabel {
+    margin: 20px auto;    
+    text-align: center;
+}
+
+/* style untuk masing2 kolom tabel detail */
+.detail-tabel td {
+    padding: 15px 20px;
+    text-align: center;     
+}
+
+/* style untuk kolom 1 tabel detail */
+.detail-tabel td:first-child {
+    text-align: left;
+}
+
+/* style untuk kolom 2 tabel detail */
+.detail-tabel td:nth-child(2) {
+    text-align: center;
+}
+
+/* style untuk kolom 3 tabel detail */
+.detail-tabel td:nth-child(3) {
+    text-align: left;
+}
+
+/* style untuk wadah tombol reset supaya berada di tengah */
+.btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* style untuk tombol reset*/
+.reset {
+    display: inline-block; 
+    width: 150px;   
+    margin: 3px auto 0 auto; 
+    background-color: #28a745; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center; 
+}
+
+/* style saat cursor ada di tombol reset */
+.reset:hover {
+    background-color: #218838;
+}

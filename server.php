@@ -7,7 +7,7 @@
 <?php
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = trim($_POST["username"]);
+    $username = trim($_POST["username"]); 
     $email = trim($_POST["email"]);
     $univ = trim($_POST["univ"]);
     $prodi = isset($_POST["prodi"]) ? $_POST["prodi"] : "";
