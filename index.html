@@ -1,13 +1,19 @@
+<!-- KELOMPOK 10 PBP 2025 -->
+<!-- Fachryzaidan Akmal 24060122120001 -->
+<!-- Ananda Putra Bayu 24060122140125 -->
+<!-- Achmad Ivan Yugava 24060122140153 -->
+<!-- Khairindra Eka Putra 24060122140178 -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Pendaftaran</title>
+  <title>Student Sign On Form</title>
 </head>
 <body>
     <form action="server.php" method="POST">
-    <h2>Form Pendaftaran</h2>
+    <h2>Student Sign On Form</h2>
     <table>
         <tr>
             <td>
@@ -16,15 +22,17 @@
             </td>
             <td>
                 <input type="text" id="username" name="username" required><br>
+                <label>Note: Username cannot contain numbers</label>
             </td>
         </tr>
         <tr>
             <td>
                 <!-- Email -->
-                <br><label for="email">Email:</label>
+                <label for="email">Email:</label>
             </td>
             <td>
                 <br><input type="email" id="email" name="email" required><br>
+                <label>Note: Email contain @ followed by domain</label>
             </td>
         </tr>
         <tr>

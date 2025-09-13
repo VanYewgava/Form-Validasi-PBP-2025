@@ -1,7 +1,11 @@
-<?php
-// Ananda Putra Bayu
-// 24060122140125
+<!-- KELOMPOK 10 PBP 2025 -->
+<!-- Fachryzaidan Akmal 24060122120001 -->
+<!-- Ananda Putra Bayu 24060122140125 -->
+<!-- Achmad Ivan Yugava 24060122140153 -->
+<!-- Khairindra Eka Putra 24060122140178 -->
 
+<?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST["username"]);
     $email = trim($_POST["email"]);
@@ -14,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Username 
     if (!preg_match("/^[a-zA-Z]+$/", $username)) {
-        $errors[] = "Username hanya boleh berisi huruf tanpa angka.";
+        $errors[] = "Username hanya boleh berisi huruf.";
     }
 
     // Email 
@@ -39,18 +43,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Alert
     if (empty($errors)) {
-        echo "<script>alert('Form submitted successfully');</script>";
-        echo "<!DOCTYPE html>";
-        echo "<html lang='en'><head><meta charset='UTF-8'><title>Detail Data</title></head><body>";
-        echo "<h2>Detail Informasi</h2>";
-        echo "<table border='1' cellpadding='8' cellspacing='0'>";
-        echo "<tr><td><strong>Username</strong></td><td>$username</td></tr>";
-        echo "<tr><td><strong>Email</strong></td><td>$email</td></tr>";
-        echo "<tr><td><strong>Perguruan Tinggi</strong></td><td>$univ</td></tr>";
-        echo "<tr><td><strong>Program Studi</strong></td><td>$prodi</td></tr>";
-        echo "<tr><td><strong>Hobi</strong></td><td>" . (count($hobi) > 0 ? implode(", ", $hobi) : "Tidak ada") . "</td></tr>";
-        echo "</table>";
-        echo "</body></html>";
+        $_SESSION["username"] = $username;
+        $_SESSION["email"] = $email;
+        $_SESSION["univ"] = $univ;
+        $_SESSION["prodi"] = $prodi;
+        $_SESSION["hobi"] = $hobi;
+        $_SESSION["password"] = $password;
+        echo "
+        <script>
+            alert('Form submitted successfully!');
+            window.location.href = 'display.php';
+        </script>
+        ";
     } else {
         $pesan_error = implode("\\n", $errors);
         echo "<script>alert('Error processing form:\\n$pesan_error'); window.history.back();</script>";
